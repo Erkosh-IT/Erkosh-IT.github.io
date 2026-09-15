@@ -1,4 +1,5 @@
-<img width="1391" height="910" alt="image" src="https://github.com/user-attachments/assets/83e33bb1-db96-4652-b3b1-a250995366b6" />
+<img width="1062" height="815" alt="image" src="https://github.com/user-attachments/assets/4e07654f-e6e0-4934-a201-e94506a070e3" /><img width="876" height="755" alt="image" src="https://github.com/user-attachments/assets/d148257c-af8d-47b7-8671-1606868d1cbb" /><img width="898" height="800" alt="image" src="https://github.com/user-attachments/assets/66ceb0a2-7460-4920-92df-8ddf84c8d21e" />
+
 
 # WebDev
 # Assignment 1: HTML & CSS Basics
@@ -47,13 +48,7 @@ For the design part, I employed inline CSS, internal CSS, and external CSS for s
 ### Part 3: Introduction to CSS
 *Applied inline, internal, and external CSS styles. Used element, class, and ID selectors to differentiate styling across the page.*
 
-<img width="1508" height="868" alt="image" src="https://github.com/user-attachments/assets/3a0c608b-3490-4f8d-b976-4ddb1d02ea5b" />
-<img width="1391" height="910" alt="image" src="https://github.com/user-attachments/assets/a4af05a6-5ab7-4a46-a589-9cfe0b028af1" />
-<img width="1882" height="753" alt="image" src="https://github.com/user-attachments/assets/c067eaa8-bd82-4733-9bbc-9408cccdf6b9" />
-<img width="1875" height="775" alt="image" src="https://github.com/user-attachments/assets/0e001303-4934-4f77-9636-7b9ec2b259e3" />
-<img width="1365" height="886" alt="image" src="https://github.com/user-attachments/assets/40f4ebbb-4c2a-40d8-9e96-fc424049336d" />
-<img width="1426" height="815" alt="image" src="https://github.com/user-attachments/assets/2efcbcfc-b93a-4542-b2ff-f31d42279643" />
-<img width="919" height="198" alt="image" src="https://github.com/user-attachments/assets/25f0e0bc-3da2-4f52-80bd-1fab358bee73" />
+
 
 **Process Explanations**
 * **Step 9 (Introduction to CSS):** I used CSS in the project to have full control over the styling of the webpage, such as fonts, colors, spaces, and layout.  
@@ -68,13 +63,15 @@ For the design part, I employed inline CSS, internal CSS, and external CSS for s
 ### Part 4: Intermediate CSS
 *Added a favicon, used `<div>` elements for grouping (header, main, footer), applied the box model (margins, padding, borders), and demonstrated static, relative, and absolute positioning alongside float and clear properties.*
 
-<img width="806" height="786" alt="image" src="https://github.com/user-attachments/assets/bdf99a93-a7a0-4dc7-a456-864dd5d3343f" />
-<img width="737" height="886" alt="image" src="https://github.com/user-attachments/assets/425b2349-0262-4589-b800-03c0a6e5ae98" />
-<img width="1084" height="890" alt="image" src="https://github.com/user-attachments/assets/b2786726-38b7-408c-98e2-e9791dd3b7d9" />
-<img width="1063" height="809" alt="image" src="https://github.com/user-attachments/assets/396935e2-e8a6-49ff-a6f5-a9aafa86b8e8" />
-<img width="663" height="624" alt="image" src="https://github.com/user-attachments/assets/ec14bf81-523c-4da1-b1e4-172275676b90" />
+
 
 **Process Explanations**
+<img width="898" height="800" alt="image" src="https://github.com/user-attachments/assets/3e508da7-eb5e-47a1-bc53-3808ed8e69f6" />
+<img width="860" height="730" alt="image" src="https://github.com/user-attachments/assets/6221481f-b2f5-4392-bdc0-a936e9a9d494" />
+<img width="876" height="755" alt="image" src="https://github.com/user-attachments/assets/7447df63-1292-499a-97db-38fc0938c422" />
+<img width="1327" height="847" alt="image" src="https://github.com/user-attachments/assets/18b4c5b7-a6ec-4979-a78c-e2bd4046df8f" />
+<img width="1062" height="815" alt="image" src="https://github.com/user-attachments/assets/302c5c5e-f3e4-4f25-a573-ed162f0dddf8" />
+<img width="1054" height="753" alt="image" src="https://github.com/user-attachments/assets/133d9793-9cc1-4b73-a807-786867dc7ab2" />
 * **Step 15 (Favicons):** I have added a custom `logo/favicon.png` to the website through the use of `<link rel="icon">` within the `<head>` of the HTML document.  
 * **Step 16 (HTML Divs):** I have created various divs with classes such as `.container`, `.intro`, and `.box` which allow me to group related content. This helps me to set background color, borders, and flexboxes on different parts of the webpage.  
 * **Step 17 (Box Model):** I have actively manipulated the CSS box model of various elements such as `.box` and `.profile-card` by setting up padding for inner space, margins for outer space between elements and border.  
