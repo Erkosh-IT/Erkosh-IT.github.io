@@ -1,6 +1,3 @@
-<img width="1062" height="815" alt="image" src="https://github.com/user-attachments/assets/4e07654f-e6e0-4934-a201-e94506a070e3" /><img width="876" height="755" alt="image" src="https://github.com/user-attachments/assets/d148257c-af8d-47b7-8671-1606868d1cbb" /><img width="898" height="800" alt="image" src="https://github.com/user-attachments/assets/66ceb0a2-7460-4920-92df-8ddf84c8d21e" />
-
-
 # WebDev
 # Assignment 1: HTML & CSS Basics
 
@@ -62,15 +59,7 @@ For the design part, I employed inline CSS, internal CSS, and external CSS for s
 
 ### Part 4: Intermediate CSS
 *Added a favicon, used `<div>` elements for grouping (header, main, footer), applied the box model (margins, padding, borders), and demonstrated static, relative, and absolute positioning alongside float and clear properties.*
-<img width="1062" height="815" alt="image" src="https://github.com/user-attachments/assets/4e07654f-e6e0-4934-a201-e94506a070e3" />
-<img width="876" height="755" alt="image" src="https://github.com/user-attachments/assets/d148257c-af8d-47b7-8671-1606868d1cbb" />
-<img width="898" height="800" alt="image" src="https://github.com/user-attachments/assets/66ceb0a2-7460-4920-92df-8ddf84c8d21e" />
-<img width="898" height="800" alt="image" src="https://github.com/user-attachments/assets/3e508da7-eb5e-47a1-bc53-3808ed8e69f6" />
-<img width="860" height="730" alt="image" src="https://github.com/user-attachments/assets/6221481f-b2f5-4392-bdc0-a936e9a9d494" />
-<img width="876" height="755" alt="image" src="https://github.com/user-attachments/assets/7447df63-1292-499a-97db-38fc0938c422" />
-<img width="1327" height="847" alt="image" src="https://github.com/user-attachments/assets/18b4c5b7-a6ec-4979-a78c-e2bd4046df8f" />
-<img width="1062" height="815" alt="image" src="https://github.com/user-attachments/assets/302c5c5e-f3e4-4f25-a573-ed162f0dddf8" />
-<img width="1054" height="753" alt="image" src="https://github.com/user-attachments/assets/133d9793-9cc1-4b73-a807-786867dc7ab2" />
+
 
 
 **Process Explanations**
