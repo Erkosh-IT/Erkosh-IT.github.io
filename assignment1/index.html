@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My First Webpage</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.internal-note {
+			letter-spacing: 0.04em;
+		}
+	</style>
+</head>
+<body>
+	<div class="page-shell">
+		<header class="site-header" id="top">
+			<div>
+				<p class="eyebrow">HTML + CSS portfolio</p>
+				<h1 id="main-heading">Hello, I'm Yerkebulan Korganbek</h1>
+				<p class="tagline">A second-year Computer Science student at Astana IT University.</p>
+			</div>
+			<div class="status-badge" aria-label="Current status">Learning in public</div>
+		</header>
+
+		<main>
+			<section class="intro section-grid" aria-labelledby="about-heading">
+				<div>
+					<h2 id="about-heading">About Me</h2>
+					<h3>Second-Year Computer Science Student</h3>
+					<p style="color: #b24735;">I am Yerkebulan Korganbek, studying Computer Science at Astana IT University and developing my skills in technology and web development.</p>
+					<p class="highlight internal-note">I am committed to continuous learning and improvement in my field.</p>
+					<p class="mood">Today I feel uncomfortable because of the deadline approaching.</p>
+					<a class="button-link" href="https://www.w3schools.com/" target="_blank" rel="noopener">Visit W3Schools</a>
+					<a class="text-link" href="https://developer.mozilla.org/" target="_blank" rel="noopener">Explore MDN</a>
+				</div>
+				<figure class="profile-card">
+					<img src="profile.jpg" alt="Profile photo of Yerkebulan Korganbek">
+					<figcaption>Where the LARPs start.</figcaption>
+				</figure>
+			</section>
+
+			<section class="section-grid two-panels" aria-label="Personal details">
+				<div class="panel">
+					<h2>My Hobbies</h2>
+					<ol>
+						<li>MEMES</li>
+						<li>READING SOME CHINESE BOOKS</li>
+						<li>DOING NOTHING</li>
+						<li>WATCH REELS</li>
+					</ol>
+				</div>
+				<div class="panel">
+					<h2>Favorite Websites</h2>
+					<ul>
+						<li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+						<li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+						<li><a href="https://www.69shuba.com/" target="_blank" rel="noopener">Chinese Books</a></li>
+					</ul>
+					<button type="button">Click Me</button>
+				</div>
+			</section>
+
+			<section class="panel schedule-panel" aria-labelledby="schedule-heading">
+				<h2 id="schedule-heading">Tuesday Class Schedule</h2>
+				<div class="table-wrap">
+					<table>
+						<thead>
+							<tr><th>Subject</th><th>Day</th><th>Time</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>WEB TECHNOLOGIES</td><td>Tuesday</td><td>2:00 PM</td></tr>
+							<tr><td>WEB TECHNOLOGIES</td><td>Tuesday</td><td>3:00 PM</td></tr>
+							<tr><td>Introduction to functional programming</td><td>Tuesday</td><td>4:00 PM</td></tr>
+                            <tr><td>Introduction to functional programming</td><td>Tuesday</td><td>5:00 PM</td></tr>
+                            <tr><td>Computer structure and architecture</td><td>Tuesday</td><td>6:00 PM</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section class="layout-challenge" aria-labelledby="layout-heading">
+				<h2 id="layout-heading">Two-Column Layout Challenge</h2>
+				<table class="layout-table">
+					<tr>
+						<td class="menu-column"><strong>Menu</strong><br><a href="#top">Home</a><br><a href="#about-heading">About</a><br><a href="#contact-heading">Contact</a></td>
+						<td><strong>Main Content</strong><br>This table demonstrates an old-school two-column layout using semantic links and a focused content area.</td>
+					</tr>
+				</table>
+			</section>
+
+			<section class="panel contact-panel" aria-labelledby="contact-heading">
+				<h2 id="contact-heading">Say Hello</h2>
+				<form action="#" method="post">
+					<label for="name">Name</label>
+					<input id="name" name="name" type="text" placeholder="Your name" required>
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email" placeholder="you@example.com" required>
+					<label for="color">Favorite Color</label>
+					<input id="color" name="color" type="color" value="#e76f51">
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+
+			<section class="position-demo" aria-label="CSS positioning examples">
+				<div class="position-box static-box">Static</div>
+				<div class="position-box relative-box">Relative</div>
+				<div class="position-box absolute-box">Absolute</div>
+			</section>
+
+			<section class="float-demo" aria-label="CSS float and clear examples">
+				<div class="float-box float-left">Floated left</div>
+				<div class="float-box float-right">Floated right</div>
+				<p class="clear-fix">This paragraph uses <code>clear: both</code> so it stays below both floated boxes.</p>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<p>&copy; 2026 Yerkebulan Korganbek's first webpage</p>
+			<a href="#top">Back to top</a>
+		</footer>
+	</div>
+</body>
+</html>
