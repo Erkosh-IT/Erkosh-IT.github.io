@@ -46,6 +46,13 @@ For the design part, I employed inline CSS, internal CSS, and external CSS for s
 *Applied inline, internal, and external CSS styles. Used element, class, and ID selectors to differentiate styling across the page.*
 
 
+<img width="752" height="842" alt="Снимок экрана 2026-09-15 141932" src="https://github.com/user-attachments/assets/c3c94ca1-227f-49ea-8ae8-c970cfb07cd2" />
+<img width="1886" height="847" alt="Снимок экрана 2026-09-15 141945" src="https://github.com/user-attachments/assets/f694ab55-1021-4f5a-a31a-056adcf20872" />
+<img width="1891" height="128" alt="Снимок экрана 2026-09-15 141951" src="https://github.com/user-attachments/assets/219d302d-524d-4626-acdc-e82fe0c61944" />
+<img width="1199" height="908" alt="Снимок экрана 2026-09-15 142009" src="https://github.com/user-attachments/assets/4812f493-d76b-4ad4-8215-697a6e3fb6ba" />
+<img width="1567" height="780" alt="Снимок экрана 2026-09-15 142016" src="https://github.com/user-attachments/assets/75c1ad51-6600-40eb-aeb4-c7ad1b31ce4b" />
+<img width="852" height="344" alt="Снимок экрана 2026-09-15 142100" src="https://github.com/user-attachments/assets/ae06fb30-0f88-489c-bb48-0be203a04fa8" />
+
 
 **Process Explanations**
 * **Step 9 (Introduction to CSS):** I used CSS in the project to have full control over the styling of the webpage, such as fonts, colors, spaces, and layout.  
@@ -59,6 +66,13 @@ For the design part, I employed inline CSS, internal CSS, and external CSS for s
 
 ### Part 4: Intermediate CSS
 *Added a favicon, used `<div>` elements for grouping (header, main, footer), applied the box model (margins, padding, borders), and demonstrated static, relative, and absolute positioning alongside float and clear properties.*
+
+<img width="898" height="800" alt="Снимок экрана 2026-09-15 141028" src="https://github.com/user-attachments/assets/7f27153b-b0a2-4086-bde8-30f3d517e9c5" />
+<img width="860" height="730" alt="Снимок экрана 2026-09-15 141104" src="https://github.com/user-attachments/assets/fd3ecf82-3024-420d-9654-5d42748de21e" />
+<img width="876" height="755" alt="Снимок экрана 2026-09-15 141121" src="https://github.com/user-attachments/assets/969bd2d8-6b8e-4302-96be-40086b638f7e" />
+<img width="1327" height="847" alt="Снимок экрана 2026-09-15 141150" src="https://github.com/user-attachments/assets/9cc3c627-7b72-4bc8-b234-3c670815e595" />
+<img width="1062" height="815" alt="Снимок экрана 2026-09-15 141219" src="https://github.com/user-attachments/assets/0f5af1e9-a9e0-409b-9d69-10609b91097c" />
+<img width="1054" height="753" alt="Снимок экрана 2026-09-15 141240" src="https://github.com/user-attachments/assets/63d8d176-86e5-49cb-8f43-1ebb79f5eeff" />
 
 
 
