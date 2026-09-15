@@ -1,0 +1,209 @@
+
+body {
+    margin: 0;
+    background: lightgray;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    padding: 50px 0 30px;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    color: blue;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: blue;
+    font-weight: bold;
+}
+
+.intro,
+.two-columns {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.intro > div,
+.two-columns > div {
+    width: 50%;
+}
+
+.profile-card {
+    padding: 15px;
+    background: white;
+    border: 1px solid gray;
+}
+
+.profile-card img {
+    width: 100%;
+    height: auto;
+}
+
+.box,
+.layout-box,
+.position-example,
+.float-example {
+    margin: 25px 0;
+    padding: 25px;
+    background: white;
+    border: 1px solid gray;
+}
+
+.highlight {
+    padding: 12px;
+    background: lightyellow;
+}
+
+.mood {
+    color: blue;
+    font-weight: bold;
+}
+
+.button-link,
+button {
+    display: inline-block;
+    margin: 8px 5px 8px 0;
+    padding: 10px 15px;
+    border: 0;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid gray;
+    text-align: left;
+}
+
+th {
+    background: blue;
+    color: white;
+}
+
+.layout-box {
+    background: black;
+    color: white;
+}
+
+.layout-box a {
+    color: white;
+}
+
+.menu {
+    width: 25%;
+    background: blue;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+input[type="color"] {
+    width: 50px;
+}
+
+.position-example {
+    position: relative;
+    height: 140px;
+}
+
+.static,
+.relative,
+.absolute,
+.left,
+.right {
+    display: inline-block;
+    padding: 12px;
+    background: lightyellow;
+    font-weight: bold;
+}
+
+.relative {
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.absolute {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    background: blue;
+    color: white;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    background: orange;
+    color: white;
+}
+
+.clear {
+    clear: both;
+    padding-top: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-top: 1px solid gray;
+}
+
+@media (max-width: 650px) {
+    .intro,
+    .two-columns {
+        display: block;
+    }
+
+    .intro > div,
+    .two-columns > div {
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
