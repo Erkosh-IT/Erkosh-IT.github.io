@@ -49,12 +49,6 @@ The portfolio page uses Flexbox in its header. Grid divides the main area into a
 
 ![Portfolio page](assignment2/screenshots/task4-portfolio.png)
 
-## What I learned and used
-
-I used the HTML elements from Week 1, including headings, paragraphs, links, images, lists, forms, and buttons. From Week 2, I used an external stylesheet, class selectors, Arial, named colors, margins, padding, and borders. From Week 3, I used Flexbox rows and columns, wrapping, alignment, growing items, Grid rows and columns, gaps, fractional units, repeated columns, and named grid areas.
-
-The styling is intentionally simple: Arial text, black text, white and light-gray backgrounds, plain borders, and regular blue links.
-
 ## Short work summary
 
 I first created the HTML pages and then added the CSS layout. I used Flexbox for the navigation and cards, and Grid for the page layout and gallery. After that, I combined both methods on the portfolio page. I checked the links, hover effects, image layout, and page appearance in a browser.
