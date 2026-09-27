@@ -1,15 +1,17 @@
 # Assignment 2: Flexbox and Grid
 
 **Name:** Yerkebulan Korganbek
+
 **Group:** IT-2501
 
 ## Project URL
 
-https://github.com/Erkosh-IT/Erkosh-IT.github.io
+Repository: https://github.com/Erkosh-IT/Erkosh-IT.github.io
+Live page: https://erkosh-it.github.io/
 
 ## How to open the project
 
-Open `assignment2/index.html` in a browser. The navigation link opens the portfolio page at `assignment2/portfolio.html`. Everything is made with plain HTML and CSS, so no installation is needed.
+Open `assignment2/index.html` in a browser. The navigation link opens `assignment2/portfolio.html`. Everything is made with plain HTML and CSS, so no installation is needed.
 
 ## Part 1: Flexbox
 
