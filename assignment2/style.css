@@ -5,24 +5,17 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    color: #243247;
-    background: #f3f5f8;
+    font-family: Arial;
+    color: black;
+    background: white;
 }
 
 a {
-    color: #2359a5;
-}
-
-h1, h2, h3 {
-    line-height: 1.2;
+    color: blue;
 }
 
 .container {
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 0 20px;
+    margin: 20px;
 }
 
 section {
@@ -32,29 +25,21 @@ section {
 /* Task 0: horizontal and vertically centred navigation */
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background: #243247;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    text-decoration: underline;
+    background: lightgray;
 }
 
 .logo {
     font-size: 24px;
-    font-weight: bold;
 }
 
 .nav-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 0;
     margin: 0;
@@ -64,54 +49,47 @@ section {
 /* Task 1: stretch makes the cards equally tall */
 .card-row {
     display: flex;
+    flex-wrap: wrap;
     align-items: stretch;
     gap: 20px;
 }
 
 .card {
-    flex: 1;
-    min-width: 0;
+    flex-grow: 1;
+    flex-basis: 250px;
     display: flex;
     flex-direction: column;
     padding: 15px;
     background: white;
-    border: 1px solid #ccd3dd;
-    border-radius: 6px;
+    border: 1px solid black;
 }
 
 .card:hover {
-    box-shadow: 0 4px 12px #00000026;
+    background: lightgray;
 }
 
 .card img {
     width: 100%;
-    height: 160px;
-    object-fit: cover;
 }
 
-/* Push buttons to the bottom of cards. */
-.card form, .project-card form {
-    margin-top: auto;
+/* Let the text grow to keep buttons at the bottom. */
+.card p {
+    flex-grow: 1;
 }
 
 button {
-    padding: 10px 16px;
-    border: 0;
-    border-radius: 4px;
-    background: #2359a5;
-    color: white;
-    font: inherit;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #173d73;
+    padding: 10px;
+    border: 1px solid black;
+    background: lightgray;
+    color: black;
+    font-family: Arial;
+    font-size: 16px;
 }
 
 /* Task 2: four named areas */
 .page-grid {
     display: grid;
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "header header"
@@ -123,13 +101,13 @@ button:hover {
 .grid-header {
     grid-area: header;
     padding: 20px;
-    background: #d2e3fa;
+    background: lightgray;
 }
 
 .grid-sidebar {
     grid-area: sidebar;
     padding: 20px;
-    background: #e0e6ee;
+    background: lightgray;
 }
 
 .grid-sidebar a {
@@ -146,7 +124,7 @@ button:hover {
 .grid-footer {
     grid-area: footer;
     padding: 20px;
-    background: #d2e3fa;
+    background: lightgray;
     text-align: center;
 }
 
@@ -154,35 +132,32 @@ button:hover {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 180px;
+    grid-template-rows: repeat(3, 1fr);
     gap: 15px;
 }
 
-.gallery figure {
+.photo {
     position: relative;
     margin: 0;
-    overflow: hidden;
 }
 
 .gallery img {
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
-.gallery figcaption {
+.caption {
+    display: none;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    padding: 10px;
-    background: #000000b3;
-    color: white;
-    opacity: 0;
+    margin: 0;
+    padding: 5px;
+    background: white;
+    color: black;
 }
 
-.gallery figure:hover figcaption,
-.gallery figure:focus figcaption {
-    opacity: 1;
+.photo:hover .caption {
+    display: block;
 }
 
 /* Task 4: Grid outside, Flexbox inside the project cards */
@@ -200,8 +175,7 @@ button:hover {
     margin-bottom: 20px;
     padding: 20px;
     background: white;
-    border: 1px solid #ccd3dd;
-    border-radius: 6px;
+    border: 1px solid black;
 }
 
 .project-card h2, .project-card p {
@@ -210,38 +184,12 @@ button:hover {
 
 .about {
     padding: 20px;
-    background: #e0e6ee;
+    background: lightgray;
 }
 
 .site-footer {
     padding: 20px;
-    background: #243247;
-    color: white;
+    background: lightgray;
+    color: black;
     text-align: center;
-}
-
-/* Stack the layouts on small screens. */
-@media (max-width: 700px) {
-    .navbar, .card-row {
-        flex-direction: column;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .page-grid {
-        grid-template-columns: 1fr;
-        grid-template-areas: "header" "sidebar" "main" "footer";
-    }
-
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
 }

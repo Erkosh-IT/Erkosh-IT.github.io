@@ -19,7 +19,7 @@ The header uses `display: flex`. `justify-content: space-between` places the log
 
 ### Task 1. Card Row
 
-Three cards contain an image, title, text, and button. The row uses Flexbox, `gap: 20px`, and `align-items: stretch` for equal heights. Each card uses a column direction. `margin-top: auto` pushes the button to the bottom. Hovering adds a shadow. The buttons open the gallery.
+Three cards contain an image, title, text, and button. The row uses Flexbox, `gap: 20px`, and `align-items: stretch` for equal heights. Each card uses a column direction. `flex-grow: 1` lets the text fill the remaining space to keep buttons at the bottom. Hovering changes the background to light gray. The buttons open the gallery.
 
 ![Task 1: three equal-height cards](screenshots/task1-cards.png)
 
@@ -33,7 +33,7 @@ The layout uses two columns and three rows. `grid-template-areas` places the hea
 
 ### Task 3. Image Gallery
 
-Nine local images use three equal columns with `repeat(3, 1fr)`. Rows are 180px high, with a 15px gap. A caption appears on hover or keyboard focus. `object-fit: cover` keeps the images from stretching.
+Nine local images use three equal columns with `repeat(3, 1fr)`. Three equal rows use `repeat(3, 1fr)`, with a 15px gap. Images use `width: 100%` and keep their original proportions. A caption appears on hover using `display: none` and `display: block`.
 
 ![Task 3: gallery with a visible hover caption](screenshots/task3-gallery.png)
 
@@ -47,7 +47,16 @@ The portfolio header uses Flexbox. The main section uses Grid with `2fr 1fr` col
 
 ## Brief Summary of Work Process
 
-The HTML structure was created first, followed by the Flexbox navigation and cards. Next, named Grid areas and the photo gallery were added. The portfolio combines both layout methods. A media query stacks the main layouts and changes the gallery to two columns on screens up to 700px wide. Finally, the pages were checked in a browser and screenshots were saved for this report.
+The HTML structure was created first, followed by the Flexbox navigation and cards. Next, named Grid areas and the photo gallery were added. The portfolio combines both layout methods. Flexbox wrapping lets the navigation and cards fit smaller screens. Grid columns use fractions of the available width. Finally, the pages were checked in a browser and screenshots were saved for this report.
+
+## Lecture Topics Used
+
+- Week 1: headings, paragraphs, lists, links, images, forms, and buttons.
+- Week 2: an external stylesheet, class and descendant selectors, Arial, named colors, margins, padding, borders, and relative/absolute positioning.
+- Week 3: Flexbox direction, wrapping, alignment, growing and basis; Grid columns, rows, gaps, `fr`, `repeat()`, and grid areas.
+- The assignment also requires hover effects and named grid areas. The hover rules use a simple background change and a caption that appears.
+
+The design uses Arial, black text, white and light-gray backgrounds, plain borders, and blue links.
 
 ## Image Sources
 
