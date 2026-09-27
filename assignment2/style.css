@@ -1,0 +1,247 @@
+/* Basic styles for both pages */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #243247;
+    background: #f3f5f8;
+}
+
+a {
+    color: #2359a5;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+/* Task 0: horizontal and vertically centred navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #243247;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Task 1: stretch makes the cards equally tall */
+.card-row {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: white;
+    border: 1px solid #ccd3dd;
+    border-radius: 6px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px #00000026;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* Push buttons to the bottom of cards. */
+.card form, .project-card form {
+    margin-top: auto;
+}
+
+button {
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 4px;
+    background: #2359a5;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #173d73;
+}
+
+/* Task 2: four named areas */
+.page-grid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    gap: 15px;
+}
+
+.grid-header {
+    grid-area: header;
+    padding: 20px;
+    background: #d2e3fa;
+}
+
+.grid-sidebar {
+    grid-area: sidebar;
+    padding: 20px;
+    background: #e0e6ee;
+}
+
+.grid-sidebar a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.grid-main {
+    grid-area: main;
+    padding: 20px;
+    background: white;
+}
+
+.grid-footer {
+    grid-area: footer;
+    padding: 20px;
+    background: #d2e3fa;
+    text-align: center;
+}
+
+/* Task 3: equal columns and rows */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 180px;
+    gap: 15px;
+}
+
+.gallery figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: #000000b3;
+    color: white;
+    opacity: 0;
+}
+
+.gallery figure:hover figcaption,
+.gallery figure:focus figcaption {
+    opacity: 1;
+}
+
+/* Task 4: Grid outside, Flexbox inside the project cards */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccd3dd;
+    border-radius: 6px;
+}
+
+.project-card h2, .project-card p {
+    margin: 0 0 10px;
+}
+
+.about {
+    padding: 20px;
+    background: #e0e6ee;
+}
+
+.site-footer {
+    padding: 20px;
+    background: #243247;
+    color: white;
+    text-align: center;
+}
+
+/* Stack the layouts on small screens. */
+@media (max-width: 700px) {
+    .navbar, .card-row {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .page-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "sidebar" "main" "footer";
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}

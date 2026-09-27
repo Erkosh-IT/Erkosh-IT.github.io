@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Flexbox places the logo and navigation in a row. -->
+    <header class="navbar">
+        <a class="logo" href="portfolio.html">My Portfolio</a>
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Assignment 2</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Grid places projects on the left and the sidebar on the right. -->
+    <main class="container portfolio-grid">
+        <section id="projects">
+            <h1>Part 3. Task 4: My Projects</h1>
+            <article class="project-card">
+                <h2>My First Webpage</h2>
+                <p>My first assignment uses HTML headings, lists, a table, a form, and basic CSS.</p>
+                <form action="../assignment1/index.html"><button type="submit">View project</button></form>
+            </article>
+            <article class="project-card">
+                <h2>Flexbox Cards</h2>
+                <p>A row of three cards with equal heights and a hover effect.</p>
+                <form action="index.html#cards"><button type="submit">View project</button></form>
+            </article>
+            <article class="project-card">
+                <h2>Photo Gallery</h2>
+                <p>Nine photos arranged with CSS Grid. Each photo has a caption on hover.</p>
+                <form action="index.html#gallery"><button type="submit">View project</button></form>
+            </article>
+        </section>
+        <aside class="about" id="about">
+            <h2>About Me</h2>
+            <p>My name is Yerkebulan Korganbek.</p>
+            <p>Group: IT-2501</p>
+            <p>I am learning HTML and CSS at Astana IT University.</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Flexbox and Grid</li>
+            </ul>
+        </aside>
+    </main>
+    <footer class="site-footer">Yerkebulan Korganbek | IT-2501</footer>
+</body>
+</html>

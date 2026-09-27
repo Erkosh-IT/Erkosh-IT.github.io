@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Flexbox and Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Task 0: Flexbox navigation -->
+    <header class="navbar" id="navigation">
+        <a class="logo" href="index.html">Yerkebulan</a>
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Assignment 2: Flexbox and Grid</h1>
+        <p>Yerkebulan Korganbek | IT-2501</p>
+
+        <!-- Task 1: equal-height cards -->
+        <section id="cards">
+            <h2>Part 1. Task 1: Card Row</h2>
+            <div class="card-row">
+                <article class="card">
+                    <img src="images/photo1.jpg" alt="Mountain landscape">
+                    <h3>Mountains</h3>
+                    <p>A quiet place to enjoy the view.</p>
+                    <form action="#gallery"><button type="submit">View gallery</button></form>
+                </article>
+                <article class="card">
+                    <img src="images/photo2.jpg" alt="A black dog on a wooden floor">
+                    <h3>Animals</h3>
+                    <p>Animals are interesting subjects for photos. This is one of my favourite pictures in the gallery.</p>
+                    <form action="#gallery"><button type="submit">View gallery</button></form>
+                </article>
+                <article class="card">
+                    <img src="images/photo3.jpg" alt="Blue water between rocky cliffs">
+                    <h3>Fjords</h3>
+                    <p>Blue water surrounded by mountains.</p>
+                    <form action="#gallery"><button type="submit">View gallery</button></form>
+                </article>
+            </div>
+        </section>
+
+        <!-- Task 2: named grid areas -->
+        <section id="layout">
+            <h2>Part 2. Task 2: Page Layout with Grid Areas</h2>
+            <div class="page-grid">
+                <header class="grid-header">Header</header>
+                <aside class="grid-sidebar">
+                    <h3>Sidebar</h3>
+                    <a href="#cards">Cards</a>
+                    <a href="#gallery">Gallery</a>
+                </aside>
+                <div class="grid-main">
+                    <h3>Main content</h3>
+                    <p>This layout uses named CSS Grid areas.</p>
+                    <p>The sidebar is on the left. This content is on the right. The header and footer span both columns.</p>
+                </div>
+                <footer class="grid-footer">Footer</footer>
+            </div>
+        </section>
+
+        <!-- Task 3: nine images in a grid -->
+        <section id="gallery">
+            <h2>Part 2. Task 3: Image Gallery</h2>
+            <p>Hover over a photo or use the Tab key to see its caption.</p>
+            <div class="gallery">
+                <figure tabindex="0"><img src="images/photo1.jpg" alt="Mountain landscape"><figcaption>Mountains</figcaption></figure>
+                <figure tabindex="0"><img src="images/photo2.jpg" alt="A black dog on a wooden floor"><figcaption>A black dog</figcaption></figure>
+                <figure tabindex="0"><img src="images/photo3.jpg" alt="Blue water between rocky cliffs"><figcaption>Fjord</figcaption></figure>
+                <figure tabindex="0"><img src="images/photo4.jpg" alt="A lighthouse under a blue sky"><figcaption>Lighthouse</figcaption></figure>
+                <figure tabindex="0"><img src="images/photo5.jpg" alt="A river through a forest"><figcaption>Forest river</figcaption></figure>
+                <figure tabindex="0"><img src="images/photo6.jpg" alt="A pug wrapped in a blanket"><figcaption>Pug</figcaption></figure>
+                <figure tabindex="0"><img src="images/photo7.jpg" alt="Red rocky hills at sunset"><figcaption>Rocky hills</figcaption></figure>
+                <figure tabindex="0"><img src="images/photo8.jpg" alt="Looking up at a glass building"><figcaption>City building</figcaption></figure>
+                <figure tabindex="0"><img src="images/photo9.jpg" alt="A snowy mountain landscape"><figcaption>Snowy mountains</figcaption></figure>
+            </div>
+        </section>
+        <p><a href="portfolio.html">Part 3. Task 4: Open my portfolio page</a></p>
+    </main>
+    <footer class="site-footer">Assignment 2 | Yerkebulan Korganbek</footer>
+</body>
+</html>
