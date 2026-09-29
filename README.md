@@ -11,13 +11,13 @@ Live page: https://erkosh-it.github.io/
 
 ## How to open the project
 
-Open `assignment2/index.html` in a browser. The navigation link opens `assignment2/portfolio.html`. Everything is made with plain HTML and CSS, so no installation is needed.
+Open assignment2/index.html in a browser. The navigation link opens assignment2/portfolio.html. Everything is made with plain HTML and CSS, so no installation is needed.
 
 ## Part 1: Flexbox
 
 ### Task 0: Navigation bar
 
-I made the header a Flexbox container. The logo stays on the left and the navigation links stay on the right. `align-items: center` keeps them vertically aligned, while `gap` adds space between the links.
+I made the header a Flexbox container. The logo stays on the left and the navigation links stay on the right. The align-items property keeps them vertically aligned, while the gap property adds space between the links.
 
 ![Navigation bar](assignment2/screenshots/task0-navigation.png)
 
@@ -51,7 +51,7 @@ The portfolio page uses Flexbox in its header. Grid divides the main area into a
 
 ## What I learned and used
 
-I used the HTML elements from Week 1, including headings, paragraphs, links, images, lists, forms, and buttons. From Week 2, I used an external stylesheet, class selectors, Arial, named colors, margins, padding, and borders. From Week 3, I used Flexbox rows and columns, wrapping, alignment, growing items, Grid rows and columns, gaps, `fr`, `repeat()`, and named grid areas.
+I used the HTML elements from Week 1, including headings, paragraphs, links, images, lists, forms, and buttons. From Week 2, I used an external stylesheet, class selectors, Arial, named colors, margins, padding, and borders. From Week 3, I used Flexbox rows and columns, wrapping, alignment, growing items, Grid rows and columns, gaps, fractional units, repeated columns, and named grid areas.
 
 The styling is intentionally simple: Arial text, black text, white and light-gray backgrounds, plain borders, and regular blue links.
 
@@ -61,7 +61,7 @@ I first created the HTML pages and then added the CSS layout. I used Flexbox for
 
 ## Image sources
 
-The nine photos came from [Lorem Picsum](https://picsum.photos/) and are saved locally in `assignment2/images`, so the gallery also works without an internet connection.
+The nine photos came from [Lorem Picsum](https://picsum.photos/) and are saved locally in assignment2/images, so the gallery also works without an internet connection.
 
 ## Previous assignment
 
