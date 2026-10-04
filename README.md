@@ -6,9 +6,7 @@
 
 ## Project URL
 
-[GitHub repository](https://github.com/Erkosh-IT/Erkosh-IT.github.io)
-
-[Assignment 3 website](https://erkosh-it.github.io/assignment3/)
+https://erkosh-it.github.io/assignment3/
 
 ## How to open the project
 
