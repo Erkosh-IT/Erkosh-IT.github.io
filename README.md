@@ -1,4 +1,4 @@
-# Assignment 2: Flexbox and Grid
+# Assignment 3: Responsive Web Design
 
 **Name:** Yerkebulan Korganbek
 
@@ -6,57 +6,112 @@
 
 ## Project URL
 
-Repository: https://github.com/Erkosh-IT/Erkosh-IT.github.io
-Live page: https://erkosh-it.github.io/
+[GitHub repository](https://github.com/Erkosh-IT/Erkosh-IT.github.io)
+
+[Assignment 3 website](https://erkosh-it.github.io/assignment3/)
 
 ## How to open the project
 
-Open assignment2/index.html in a browser. The navigation link opens assignment2/portfolio.html. Everything is made with plain HTML and CSS, so no installation is needed.
+Open assignment3/index.html in a browser. The links at the top lead to the Bootstrap exercises and the portfolio page. Bootstrap is saved in the project, so the pages also work offline.
 
-## Part 1: Flexbox
+## Part 1: Media Queries
 
-### Task 0: Navigation bar
+### Task 0: Responsive Typography
 
-I made the header a Flexbox container. The logo stays on the left and the navigation links stay on the right. The align-items property keeps them vertically aligned, while the gap property adds space between the links.
+This page has headings and paragraphs that change size with the screen. The main heading is 24px on mobile, 30px on tablet, and 36px on desktop. Paragraphs change from 16px to 18px and then to 20px. The breakpoints are 768px for tablet and 992px for desktop.
 
-![Navigation bar](assignment2/screenshots/task0-navigation.png)
+Mobile, 390px:
 
-### Task 1: Card row
+![Task 0 on mobile](assignment3/screenshots/task0-mobile.png)
 
-The page has three cards. Each card contains an image, a title, a short description, and a button. Flexbox places the cards in a row, gives them equal space, and keeps their heights consistent. The cards have a simple light-gray hover effect.
+Tablet, 820px:
 
-![Card row](assignment2/screenshots/task1-cards.png)
+![Task 0 on tablet](assignment3/screenshots/task0-tablet.png)
 
-## Part 2: Grid system
+Desktop, 1200px:
 
-### Task 2: Page layout with grid areas
+![Task 0 on desktop](assignment3/screenshots/task0-desktop.png)
 
-I used CSS Grid to make a small page layout with a header, sidebar, main content, and footer. The header and footer stretch across the page. The sidebar is on the left and the main content is on the right. Named grid areas make each position easy to understand.
+### Task 1: Responsive Layout with Media Queries
 
-![Grid page layout](assignment2/screenshots/task2-grid.png)
+I made three boxes about HTML, CSS, and responsive design. They stack on mobile, form two columns on tablet, and fit in one row on desktop. This page uses CSS media queries without Bootstrap.
 
-### Task 3: Image gallery
+Mobile, 390px:
 
-The gallery contains nine local images. Grid makes three equal columns and three equal rows, with a small gap between the images. When the mouse moves over an image, a short caption appears at the bottom.
+![Task 1 on mobile](assignment3/screenshots/task1-mobile.png)
 
-![Image gallery](assignment2/screenshots/task3-gallery.png)
+Tablet, 820px:
 
-## Part 3: Combining Flexbox and Grid
+![Task 1 on tablet](assignment3/screenshots/task1-tablet.png)
 
-### Task 4: Portfolio page
+Desktop, 1200px:
 
-The portfolio page uses Flexbox in its header. Grid divides the main area into a projects section and an information sidebar. Each project card uses Flexbox to arrange its title, description, and button from top to bottom.
+![Task 1 on desktop](assignment3/screenshots/task1-desktop.png)
 
-![Portfolio page](assignment2/screenshots/task4-portfolio.png)
+## Part 2: Bootstrap Grid System
 
-## Short work summary
+### Task 2: Bootstrap Responsive Columns
 
-I first created the HTML pages and then added the CSS layout. I used Flexbox for the navigation and cards, and Grid for the page layout and gallery. After that, I combined both methods on the portfolio page. I checked the links, hover effects, image layout, and page appearance in a browser.
+I used Bootstrap to make the same three-box layout. Each box takes all 12 columns on mobile, 6 on tablet, and 4 on desktop. This gives one box per row on mobile, two on the first row on tablet, and three side by side on desktop.
 
-## Image sources
+Mobile, 390px:
 
-The nine photos came from [Lorem Picsum](https://picsum.photos/) and are saved locally in assignment2/images, so the gallery also works without an internet connection.
+![Task 2 on mobile](assignment3/screenshots/task2-mobile.png)
 
-## Previous assignment
+Tablet, 820px:
+
+![Task 2 on tablet](assignment3/screenshots/task2-tablet.png)
+
+Desktop, 1200px:
+
+![Task 2 on desktop](assignment3/screenshots/task2-desktop.png)
+
+### Task 3: Bootstrap Navigation Bar
+
+The navbar has my name on the left and page links on the right. Below 992px, the links collapse into a menu button. Clicking the button opens or closes the menu using Bootstrap's JavaScript.
+
+Mobile with the menu open:
+
+![Task 3 on mobile](assignment3/screenshots/task3-mobile.png)
+
+Tablet with the menu open:
+
+![Task 3 on tablet](assignment3/screenshots/task3-tablet.png)
+
+Desktop:
+
+![Task 3 on desktop](assignment3/screenshots/task3-desktop.png)
+
+## Part 3: Combined Project
+
+### Task 4: Responsive Portfolio Page
+
+My portfolio has a Bootstrap navbar, project cards, an About Me sidebar with a GitHub contact link, and a footer. On tablet and desktop, the projects are on the left and the sidebar is on the right. On mobile, the sidebar moves below the projects.
+
+The cards use Bootstrap columns. Custom media queries change the font sizes and page padding at 768px and 992px. The short introduction above the projects is hidden on mobile to save space, while the projects and contact details stay visible.
+
+Mobile, 390px:
+
+![Task 4 on mobile](assignment3/screenshots/task4-mobile.png)
+
+Tablet, 820px:
+
+![Task 4 on tablet](assignment3/screenshots/task4-tablet.png)
+
+Desktop, 1200px:
+
+![Task 4 on desktop](assignment3/screenshots/task4-desktop.png)
+
+## Short Work Summary
+
+I started with the media-query page and changed the text sizes and number of columns for different screens. Then I made a similar layout with Bootstrap and added the collapsible navbar. Finally, I put the projects and personal information together on the portfolio page. I checked the pages at mobile, tablet, and desktop sizes and saved the screenshots above.
+
+## Resources
+
+The project uses Bootstrap 5.3.3. The grid and navbar follow the examples in the [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
+
+## Previous Assignments
 
 [Assignment 1 report](assignment1/README.md)
+
+[Assignment 2 report](assignment2/README.md)

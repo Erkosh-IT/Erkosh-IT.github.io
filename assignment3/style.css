@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.page {
+    padding: 15px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+.simple-header, .navbar, footer {
+    padding: 15px;
+    background-color: lightgray;
+}
+
+.simple-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.box {
+    padding: 15px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.extra-info {
+    display: none;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .page {
+        padding: 20px;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .extra-info {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .page {
+        padding: 30px;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
