@@ -24,7 +24,7 @@ The first form has a name field, an email field, a message box, and a Submit but
 
 ## Task 1: HTML5 Validation
 
-All three fields are required. The name accepts 2 to 50 characters, and the message accepts 10 to 500 characters. The email field uses type="email". The browser stops submission if a required field is empty or the email format is incorrect.
+All three fields are required. The name has a maximum of 50 characters, and the message has a maximum of 500 characters. The email field uses type="email". The browser stops submission if a required field is empty or the email format is incorrect.
 
 The screenshot shows an email without an @ symbol.
 
@@ -42,7 +42,7 @@ The form uses row and g-3 for the layout and spacing. Name and email use col-12 
 
 The two fixed examples show is-valid and is-invalid with messages below them. These classes are written directly in the HTML.
 
-The form below them uses Bootstrap's was-validated class. This lets Bootstrap CSS show feedback based on HTML5 validation. Feedback is visible from the start and updates as the fields change. The browser also checks the form when Submit is pressed.
+The email form below them uses Bootstrap's was-validated class. This lets Bootstrap CSS show feedback based on HTML5 validation. Feedback is visible from the start. An empty or incorrect email shows an error, and a correctly formatted email shows success. The browser also checks the form when Submit is pressed.
 
 ![Valid and invalid Bootstrap fields](assignment4/screenshots/task3-feedback.png)
 
@@ -50,7 +50,7 @@ The form below them uses Bootstrap's was-validated class. This lets Bootstrap CS
 
 The registration form includes first and last name, email, password, password confirmation, gender, hobbies, and country. Gender uses radio buttons, so only one option can be selected. Hobbies use checkboxes and are optional, so several can be selected. Country uses a dropdown.
 
-Both password fields must be 8 to 64 characters long. HTML checks each field separately; it does not compare the two passwords. The form uses was-validated for Bootstrap feedback without JavaScript. Submit checks the required fields. Reset empties the fields, so the required-field messages appear again.
+Both password fields need at least 8 characters. HTML checks each field separately; it does not compare the two passwords. The form uses was-validated for Bootstrap feedback without JavaScript. Submit checks the required fields. Reset empties the fields, so the required-field messages appear again.
 
 Empty fields with validation feedback:
 

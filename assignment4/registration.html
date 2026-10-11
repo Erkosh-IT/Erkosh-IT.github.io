@@ -9,10 +9,10 @@
 </head>
 <body>
     <header>
-        <nav aria-label="Main navigation">
+        <nav>
             <a href="index.html">HTML Forms</a>
             <a href="bootstrap.html">Bootstrap Forms</a>
-            <a href="registration.html" aria-current="page">Registration</a>
+            <a href="registration.html">Registration</a>
         </nav>
     </header>
     <main class="page" id="task4">
@@ -21,34 +21,34 @@
         <form class="row g-3 was-validated" action="complete.html" method="get">
             <div class="col-12 col-md-6">
                 <label for="first-name" class="form-label">First Name</label>
-                <input id="first-name" name="firstName" type="text" class="form-control" minlength="2" maxlength="50" required autocomplete="given-name" aria-describedby="first-error first-good">
-                <div id="first-error" class="invalid-feedback">Enter a first name with 2 to 50 characters.</div>
+                <input id="first-name" name="firstName" type="text" class="form-control" maxlength="50" required aria-describedby="first-error first-good">
+                <div id="first-error" class="invalid-feedback">Enter your first name.</div>
                 <div id="first-good" class="valid-feedback">Looks good!</div>
             </div>
             <div class="col-12 col-md-6">
                 <label for="last-name" class="form-label">Last Name</label>
-                <input id="last-name" name="lastName" type="text" class="form-control" minlength="2" maxlength="50" required autocomplete="family-name" aria-describedby="last-error last-good">
-                <div id="last-error" class="invalid-feedback">Enter a last name with 2 to 50 characters.</div>
+                <input id="last-name" name="lastName" type="text" class="form-control" maxlength="50" required aria-describedby="last-error last-good">
+                <div id="last-error" class="invalid-feedback">Enter your last name.</div>
                 <div id="last-good" class="valid-feedback">Looks good!</div>
             </div>
             <div class="col-12">
                 <label for="register-email" class="form-label">Email</label>
-                <input id="register-email" name="email" type="email" class="form-control" maxlength="254" required autocomplete="email" aria-describedby="email-error email-good">
+                <input id="register-email" name="email" type="email" class="form-control" required aria-describedby="email-error email-good">
                 <div id="email-error" class="invalid-feedback">Enter a valid email address.</div>
                 <div id="email-good" class="valid-feedback">Looks good!</div>
             </div>
             <div class="col-12 col-md-6">
                 <label for="password" class="form-label">Password</label>
-                <input id="password" type="password" class="form-control" minlength="8" maxlength="64" required autocomplete="new-password" aria-describedby="password-help password-error password-good">
-                <div id="password-help" class="form-text">Use 8 to 64 characters.</div>
-                <div id="password-error" class="invalid-feedback">Enter a password with 8 to 64 characters.</div>
+                <input id="password" type="password" class="form-control" minlength="8" required aria-describedby="password-help password-error password-good">
+                <div id="password-help" class="form-text">Use at least 8 characters.</div>
+                <div id="password-error" class="invalid-feedback">Use at least 8 characters.</div>
                 <div id="password-good" class="valid-feedback">Looks good!</div>
             </div>
             <div class="col-12 col-md-6">
                 <label for="confirm-password" class="form-label">Confirm Password</label>
-                <input id="confirm-password" type="password" class="form-control" minlength="8" maxlength="64" required autocomplete="new-password" aria-describedby="confirm-help confirm-error confirm-good">
+                <input id="confirm-password" type="password" class="form-control" minlength="8" required aria-describedby="confirm-help confirm-error confirm-good">
                 <div id="confirm-help" class="form-text">Enter your password again. This form checks length only.</div>
-                <div id="confirm-error" class="invalid-feedback">Enter 8 to 64 characters.</div>
+                <div id="confirm-error" class="invalid-feedback">Use at least 8 characters.</div>
                 <div id="confirm-good" class="valid-feedback">Length is valid.</div>
             </div>
             <fieldset class="col-12 col-md-6">
