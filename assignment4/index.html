@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 - HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html" aria-current="page">HTML Forms</a>
+            <a href="bootstrap.html">Bootstrap Forms</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+    </header>
+    <main class="page">
+        <h1>Assignment 4: Forms and Validation</h1>
+        <p>These are practice forms. Details are not sent or saved.</p>
+        <section id="task0">
+            <h2>Task 0: Simple Contact Form</h2>
+            <form class="basic-form" method="post">
+                <label for="basic-name">Name</label>
+                <input id="basic-name" name="name" type="text" autocomplete="name">
+                <label for="basic-email">Email</label>
+                <input id="basic-email" name="email" type="email" autocomplete="email">
+                <label for="basic-message">Message</label>
+                <textarea id="basic-message" name="message" rows="3"></textarea>
+                <button type="submit">Submit</button>
+                <p class="status" role="status"></p>
+            </form>
+        </section>
+        <section id="task1">
+            <h2>Task 1: HTML5 Validation</h2>
+            <p>All fields are required. Try submitting an empty form or an incorrect email.</p>
+            <form class="basic-form" method="post">
+                <label for="html-name">Name</label>
+                <input id="html-name" name="name" type="text" minlength="2" maxlength="50" required autocomplete="name" aria-describedby="name-help">
+                <small id="name-help">Use 2 to 50 characters.</small>
+                <label for="html-email">Email</label>
+                <input id="html-email" name="email" type="email" maxlength="254" required autocomplete="email">
+                <label for="html-message">Message</label>
+                <textarea id="html-message" name="message" rows="3" minlength="10" maxlength="500" required aria-describedby="message-help"></textarea>
+                <small id="message-help">Use 10 to 500 characters.</small>
+                <button type="submit">Submit</button>
+                <p class="status" role="status"></p>
+            </form>
+        </section>
+    </main>
+    <footer>Yerkebulan Korganbek | IT-2501</footer>
+    <script src="forms.js"></script>
+</body>
+</html>

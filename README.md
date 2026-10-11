@@ -1,4 +1,4 @@
-# Assignment 3: Responsive Web Design
+# Assignment 4: Forms and Validation
 
 **Name:** Yerkebulan Korganbek
 
@@ -6,110 +6,82 @@
 
 ## Project URL
 
-https://erkosh-it.github.io/assignment3/
+https://github.com/Erkosh-IT/Erkosh-IT.github.io
+
+Website: https://erkosh-it.github.io/assignment4/
 
 ## How to open the project
 
-Open assignment3/index.html, or use the website link above. You can open the other two pages from the navigation menu. The downloaded project works offline too.
+Open assignment4/index.html, or use the website link above. The navigation links open the Bootstrap forms and registration page. Bootstrap is included in the project, so the pages also work offline.
 
-## Part 1: Media Queries
+These are practice forms. They check the entered details but do not send or save them or create an account.
 
-### Task 0: Responsive Typography
+## Task 0: Simple Contact Form
 
-For the first task, I added a heading and a few paragraphs. The text gets bigger at 768px and again at 992px. The main heading changes from 24px to 30px and then 36px. The paragraph sizes are 16px, 18px, and 20px.
+The first form has a name field, an email field, a message box, and a Submit button. Each field has a label connected to it using matching for and id values.
 
-Mobile, 390px:
+![Simple contact form](assignment4/screenshots/task0-contact.png)
 
-![Task 0 on mobile](assignment3/screenshots/task0-mobile.png)
+## Task 1: HTML5 Validation
 
-Tablet, 820px:
+All three fields are required. The name accepts 2 to 50 characters, and the message accepts 10 to 500 characters. The email field uses type="email". The browser stops submission if a required field is empty or the email format is incorrect.
 
-![Task 0 on tablet](assignment3/screenshots/task0-tablet.png)
+The screenshot shows an email without an @ symbol.
 
-Desktop, 1200px:
+![HTML5 email validation](assignment4/screenshots/task1-html-validation.png)
 
-![Task 0 on desktop](assignment3/screenshots/task0-desktop.png)
+## Task 2: Bootstrap Form Styling
 
-### Task 1: Responsive Layout with Media Queries
+This is the contact form with Bootstrap styling. I used form-label for labels, form-control for inputs, and form-text for helper text. The fields also have placeholders.
 
-The three boxes are on the same page as Task 0. On a phone they go one below another. On a tablet, two fit next to each other and the third goes below. All three fit in one row on desktop. I used media queries to change the number of Grid columns.
+The form uses row and g-3 for the layout and spacing. Name and email use col-12 and col-md-6, so they sit next to each other from 768px and stack on smaller screens. The message takes the full row.
 
-Mobile, 390px:
+![Bootstrap contact form](assignment4/screenshots/task2-bootstrap.png)
 
-![Task 1 on mobile](assignment3/screenshots/task1-mobile.png)
+## Task 3: Bootstrap Validation Styles
 
-Tablet, 820px:
+After Submit is pressed, correct fields get the is-valid class and incorrect fields get is-invalid. There are messages below the fields. The feedback updates when the input changes.
 
-![Task 1 on tablet](assignment3/screenshots/task1-tablet.png)
+In this example, the name and message are valid, but the email needs fixing. A small script in forms.js checks the fields and changes the classes.
 
-Desktop, 1200px:
+![Valid and invalid Bootstrap fields](assignment4/screenshots/task3-feedback.png)
 
-![Task 1 on desktop](assignment3/screenshots/task1-desktop.png)
+## Task 4: Registration Form
 
-## Part 2: Bootstrap Grid System
+The registration form includes first and last name, email, password, password confirmation, gender, hobbies, and country. Gender uses radio buttons, so only one option can be selected. Hobbies use checkboxes and are optional, so several can be selected. Country uses a dropdown.
 
-### Task 2: Bootstrap Responsive Columns
+Passwords must be 8 to 64 characters long. The script also checks that both passwords match. Submit checks the required fields and shows feedback. Reset clears the fields and feedback.
 
-This task has the same layout as Task 1, but uses Bootstrap classes. I used col-12, col-md-6, and col-lg-4 on each box. They take the full row on mobile, half a row on tablet, and a third of a row on desktop.
+Submitting an empty form:
 
-Mobile, 390px:
+![Registration form errors](assignment4/screenshots/task4-errors.png)
 
-![Task 2 on mobile](assignment3/screenshots/task2-mobile.png)
+Correctly completed form with sample details:
 
-Tablet, 820px:
+![Valid registration form](assignment4/screenshots/task4-valid.png)
 
-![Task 2 on tablet](assignment3/screenshots/task2-tablet.png)
+The Bootstrap Grid places related fields beside each other on wider screens. Below 768px, the fields stack in one column.
 
-Desktop, 1200px:
-
-![Task 2 on desktop](assignment3/screenshots/task2-desktop.png)
-
-### Task 3: Bootstrap Navigation Bar
-
-I put my name on the left of the navbar and the page links on the right. On screens smaller than 992px, there is a menu button instead of the row of links. Bootstrap's JavaScript makes the button open and close the menu.
-
-Mobile with the menu open:
-
-![Task 3 on mobile](assignment3/screenshots/task3-mobile.png)
-
-Tablet with the menu open:
-
-![Task 3 on tablet](assignment3/screenshots/task3-tablet.png)
-
-Desktop:
-
-![Task 3 on desktop](assignment3/screenshots/task3-desktop.png)
-
-## Part 3: Combined Project
-
-### Task 4: Responsive Portfolio Page
-
-For the portfolio, I added cards linking to my three assignments. The About Me section contains my name, group, and GitHub link. It sits beside the projects on larger screens and below them on mobile. There is also a navbar at the top and a footer at the bottom.
-
-Bootstrap handles the columns. My media queries change the text size and padding. They also hide the short introduction on mobile, where there is less space.
-
-Mobile, 390px:
-
-![Task 4 on mobile](assignment3/screenshots/task4-mobile.png)
-
-Tablet, 820px:
-
-![Task 4 on tablet](assignment3/screenshots/task4-tablet.png)
-
-Desktop, 1200px:
-
-![Task 4 on desktop](assignment3/screenshots/task4-desktop.png)
+![Registration form on mobile](assignment4/screenshots/task4-mobile.png)
 
 ## Work Summary
 
-I made the HTML pages first, then added the media queries and Bootstrap layouts. After putting the portfolio together, I checked the pages at different widths. I checked that the boxes moved to the right rows, the text changed size, and the menu button worked. The screenshots show the result at 390px, 820px, and 1200px.
+I made the basic contact form, added HTML validation, and then made the Bootstrap versions. The registration page uses the same validation approach with an extra check for matching passwords. I checked empty fields, incorrect emails, short passwords, different passwords, and the Reset button. I also checked the pages at mobile, tablet, and desktop widths.
 
 ## Resources
 
-Bootstrap version: 5.3.3. Reference: [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
+[Lecture playlist: Bootstrap basics](https://www.youtube.com/playlist?list=PLPT6CF0r4E3rkvy1rLUKdDHf_HmWZeURW)
+
+[Bootstrap forms documentation](https://getbootstrap.com/docs/5.3/forms/overview/)
+
+[Bootstrap validation documentation](https://getbootstrap.com/docs/5.3/forms/validation/)
+
+Bootstrap version: 5.3.3.
 
 ## Previous Assignments
 
 [Assignment 1 report](assignment1/README.md)
 
 [Assignment 2 report](assignment2/README.md)
+
+[Assignment 3 report](assignment3/README.md)

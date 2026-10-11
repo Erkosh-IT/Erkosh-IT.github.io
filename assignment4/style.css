@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+header, footer {
+    padding: 15px;
+    background-color: lightgray;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.page {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+.basic-form label, .basic-form small {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.basic-form input, .basic-form textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    font: inherit;
+    border: 1px solid gray;
+}
+
+button {
+    padding: 8px 15px;
+    font: inherit;
+    color: black;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.form-control, .form-select, .btn {
+    border-radius: 0;
+}
+
+legend {
+    font-size: 18px;
+}
+
+.status {
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+}
