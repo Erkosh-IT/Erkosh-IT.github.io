@@ -17,10 +17,10 @@
     </header>
     <main class="page">
         <h1>Part 2: Bootstrap Forms</h1>
-        <p>These are practice forms. Details are not sent or saved.</p>
+        <p>These are practice forms. Use sample details.</p>
         <section id="task2">
             <h2>Task 2: Bootstrap Form Styling</h2>
-            <form class="row g-3" method="post">
+            <form class="row g-3" action="complete.html" method="get">
                 <div class="col-12 col-md-6">
                     <label for="styled-name" class="form-label">Name</label>
                     <input id="styled-name" name="name" type="text" class="form-control" placeholder="Your name" minlength="2" maxlength="50" required autocomplete="name">
@@ -37,14 +37,26 @@
                 </div>
                 <div class="col-12">
                     <button type="submit" class="btn btn-outline-dark">Submit</button>
-                    <p class="status" role="status"></p>
                 </div>
             </form>
         </section>
         <section id="task3">
             <h2>Task 3: Bootstrap Validation Styles</h2>
-            <p>Submit the form to check the fields. Correct any mistakes to see the feedback change.</p>
-            <form class="row g-3 feedback-form" method="post">
+            <p>These two fixed examples show the is-valid and is-invalid classes.</p>
+            <div class="row g-3">
+                <div class="col-12 col-md-6">
+                    <label for="valid-example" class="form-label">Valid example</label>
+                    <input id="valid-example" type="text" class="form-control is-valid" value="Alex Student" readonly aria-describedby="valid-example-feedback">
+                    <div id="valid-example-feedback" class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="invalid-example" class="form-label">Invalid example</label>
+                    <input id="invalid-example" type="email" class="form-control is-invalid" value="wrong-email" readonly aria-describedby="invalid-example-feedback">
+                    <div id="invalid-example-feedback" class="invalid-feedback">Enter a valid email address.</div>
+                </div>
+            </div>
+            <p class="mt-3">Try the form below. Bootstrap feedback is visible from the start and changes as you fill in the fields.</p>
+            <form class="row g-3 was-validated" action="complete.html" method="get">
                 <div class="col-12 col-md-6">
                     <label for="feedback-name" class="form-label">Name</label>
                     <input id="feedback-name" name="name" type="text" class="form-control" minlength="2" maxlength="50" required autocomplete="name" aria-describedby="feedback-name-error feedback-name-good">
@@ -65,12 +77,10 @@
                 </div>
                 <div class="col-12">
                     <button type="submit" class="btn btn-outline-dark">Submit</button>
-                    <p class="status" role="status"></p>
                 </div>
             </form>
         </section>
     </main>
     <footer>Yerkebulan Korganbek | IT-2501</footer>
-    <script src="forms.js"></script>
 </body>
 </html>

@@ -17,8 +17,8 @@
     </header>
     <main class="page" id="task4">
         <h1>Task 4: Registration Form</h1>
-        <p>This is a practice form. No account is created and details are not saved.</p>
-        <form class="row g-3 feedback-form" method="post">
+        <p>This is a practice form. Use sample details. No account is created.</p>
+        <form class="row g-3 was-validated" action="complete.html" method="get">
             <div class="col-12 col-md-6">
                 <label for="first-name" class="form-label">First Name</label>
                 <input id="first-name" name="firstName" type="text" class="form-control" minlength="2" maxlength="50" required autocomplete="given-name" aria-describedby="first-error first-good">
@@ -39,16 +39,17 @@
             </div>
             <div class="col-12 col-md-6">
                 <label for="password" class="form-label">Password</label>
-                <input id="password" name="password" type="password" class="form-control" minlength="8" maxlength="64" required autocomplete="new-password" aria-describedby="password-help password-error password-good">
+                <input id="password" type="password" class="form-control" minlength="8" maxlength="64" required autocomplete="new-password" aria-describedby="password-help password-error password-good">
                 <div id="password-help" class="form-text">Use 8 to 64 characters.</div>
                 <div id="password-error" class="invalid-feedback">Enter a password with 8 to 64 characters.</div>
                 <div id="password-good" class="valid-feedback">Looks good!</div>
             </div>
             <div class="col-12 col-md-6">
                 <label for="confirm-password" class="form-label">Confirm Password</label>
-                <input id="confirm-password" name="confirmPassword" type="password" class="form-control" minlength="8" maxlength="64" required autocomplete="new-password" aria-describedby="confirm-error confirm-good">
-                <div id="confirm-error" class="invalid-feedback">Repeat the same password, using 8 to 64 characters.</div>
-                <div id="confirm-good" class="valid-feedback">Passwords match.</div>
+                <input id="confirm-password" type="password" class="form-control" minlength="8" maxlength="64" required autocomplete="new-password" aria-describedby="confirm-help confirm-error confirm-good">
+                <div id="confirm-help" class="form-text">Enter your password again. This form checks length only.</div>
+                <div id="confirm-error" class="invalid-feedback">Enter 8 to 64 characters.</div>
+                <div id="confirm-good" class="valid-feedback">Length is valid.</div>
             </div>
             <fieldset class="col-12 col-md-6">
                 <legend>Gender</legend>
@@ -97,11 +98,9 @@
             <div class="col-12">
                 <button type="submit" class="btn btn-outline-dark">Submit</button>
                 <button type="reset" class="btn btn-outline-dark">Reset</button>
-                <p class="status" role="status"></p>
             </div>
         </form>
     </main>
     <footer>Yerkebulan Korganbek | IT-2501</footer>
-    <script src="forms.js"></script>
 </body>
 </html>

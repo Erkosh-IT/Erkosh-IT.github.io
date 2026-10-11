@@ -14,7 +14,7 @@ Website: https://erkosh-it.github.io/assignment4/
 
 Open assignment4/index.html, or use the website link above. The navigation links open the Bootstrap forms and registration page. Bootstrap is included in the project, so the pages also work offline.
 
-These are practice forms. They check the entered details but do not send or save them or create an account.
+These are practice forms made with HTML, CSS, and Bootstrap CSS. There is no JavaScript. Use sample details when testing. A valid submission opens a simple completion page; it does not create an account. The forms use GET, so named fields appear in the URL. The password fields have no name attribute and are not included in the URL.
 
 ## Task 0: Simple Contact Form
 
@@ -40,9 +40,9 @@ The form uses row and g-3 for the layout and spacing. Name and email use col-12 
 
 ## Task 3: Bootstrap Validation Styles
 
-After Submit is pressed, correct fields get the is-valid class and incorrect fields get is-invalid. There are messages below the fields. The feedback updates when the input changes.
+The two fixed examples show is-valid and is-invalid with messages below them. These classes are written directly in the HTML.
 
-In this example, the name and message are valid, but the email needs fixing. A small script in forms.js checks the fields and changes the classes.
+The form below them uses Bootstrap's was-validated class. This lets Bootstrap CSS show feedback based on HTML5 validation. Feedback is visible from the start and updates as the fields change. The browser also checks the form when Submit is pressed.
 
 ![Valid and invalid Bootstrap fields](assignment4/screenshots/task3-feedback.png)
 
@@ -50,9 +50,9 @@ In this example, the name and message are valid, but the email needs fixing. A s
 
 The registration form includes first and last name, email, password, password confirmation, gender, hobbies, and country. Gender uses radio buttons, so only one option can be selected. Hobbies use checkboxes and are optional, so several can be selected. Country uses a dropdown.
 
-Passwords must be 8 to 64 characters long. The script also checks that both passwords match. Submit checks the required fields and shows feedback. Reset clears the fields and feedback.
+Both password fields must be 8 to 64 characters long. HTML checks each field separately; it does not compare the two passwords. The form uses was-validated for Bootstrap feedback without JavaScript. Submit checks the required fields. Reset empties the fields, so the required-field messages appear again.
 
-Submitting an empty form:
+Empty fields with validation feedback:
 
 ![Registration form errors](assignment4/screenshots/task4-errors.png)
 
@@ -66,7 +66,7 @@ The Bootstrap Grid places related fields beside each other on wider screens. Bel
 
 ## Work Summary
 
-I made the basic contact form, added HTML validation, and then made the Bootstrap versions. The registration page uses the same validation approach with an extra check for matching passwords. I checked empty fields, incorrect emails, short passwords, different passwords, and the Reset button. I also checked the pages at mobile, tablet, and desktop widths.
+I made the basic contact form, added HTML validation, and then made the Bootstrap versions. I used Bootstrap classes for the layout and feedback. I checked empty fields, incorrect emails, short passwords, valid submissions, and the Reset button. I also checked the pages at mobile, tablet, and desktop widths.
 
 ## Resources
 

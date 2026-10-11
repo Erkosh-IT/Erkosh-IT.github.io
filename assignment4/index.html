@@ -16,10 +16,10 @@
     </header>
     <main class="page">
         <h1>Assignment 4: Forms and Validation</h1>
-        <p>These are practice forms. Details are not sent or saved.</p>
+        <p>These are practice forms. Use sample details.</p>
         <section id="task0">
             <h2>Task 0: Simple Contact Form</h2>
-            <form class="basic-form" method="post">
+            <form class="basic-form" action="complete.html" method="get">
                 <label for="basic-name">Name</label>
                 <input id="basic-name" name="name" type="text" autocomplete="name">
                 <label for="basic-email">Email</label>
@@ -27,13 +27,12 @@
                 <label for="basic-message">Message</label>
                 <textarea id="basic-message" name="message" rows="3"></textarea>
                 <button type="submit">Submit</button>
-                <p class="status" role="status"></p>
             </form>
         </section>
         <section id="task1">
             <h2>Task 1: HTML5 Validation</h2>
             <p>All fields are required. Try submitting an empty form or an incorrect email.</p>
-            <form class="basic-form" method="post">
+            <form class="basic-form" action="complete.html" method="get">
                 <label for="html-name">Name</label>
                 <input id="html-name" name="name" type="text" minlength="2" maxlength="50" required autocomplete="name" aria-describedby="name-help">
                 <small id="name-help">Use 2 to 50 characters.</small>
@@ -43,11 +42,9 @@
                 <textarea id="html-message" name="message" rows="3" minlength="10" maxlength="500" required aria-describedby="message-help"></textarea>
                 <small id="message-help">Use 10 to 500 characters.</small>
                 <button type="submit">Submit</button>
-                <p class="status" role="status"></p>
             </form>
         </section>
     </main>
     <footer>Yerkebulan Korganbek | IT-2501</footer>
-    <script src="forms.js"></script>
 </body>
 </html>
