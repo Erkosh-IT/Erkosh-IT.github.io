@@ -14,7 +14,7 @@ Website: https://erkosh-it.github.io/assignment4/
 
 Open assignment4/index.html, or use the website link above. The navigation links open the Bootstrap forms and registration page. Bootstrap is included in the project, so the pages also work offline.
 
-These are practice forms made with HTML, CSS, and Bootstrap CSS. There is no JavaScript. Use sample details when testing. A valid submission opens a simple completion page; it does not create an account. The forms use GET, so named fields appear in the URL. The password fields have no name attribute and are not included in the URL.
+These are practice forms made with HTML, CSS, and Bootstrap CSS. Task 4 also uses a small JavaScript file for password matching and feedback after Submit. Use sample details when testing. Tasks 0 to 3 open a completion page using GET, so named fields appear in the URL. Task 4 stays on the registration page and does not send the entered details or create an account.
 
 ## Task 0: Simple Contact Form
 
@@ -50,9 +50,9 @@ The email form below them uses Bootstrap's was-validated class. This lets Bootst
 
 The registration form includes first and last name, email, password, password confirmation, gender, hobbies, and country. Gender uses radio buttons, so only one option can be selected. Hobbies use checkboxes and are optional, so several can be selected. Country uses a dropdown.
 
-Both password fields need at least 8 characters. HTML checks each field separately; it does not compare the two passwords. The form uses was-validated for Bootstrap feedback without JavaScript. Submit checks the required fields. Reset empties the fields, so the required-field messages appear again.
+Both password fields need at least 8 characters. The registration.js file compares the passwords when Submit is pressed. It then adds was-validated to show Bootstrap error or success feedback. A message below the buttons says whether the form is correct. Editing a field hides the old feedback until Submit is pressed again. Reset clears the fields and feedback.
 
-Empty fields with validation feedback:
+Feedback after submitting empty fields:
 
 ![Registration form errors](assignment4/screenshots/task4-errors.png)
 
@@ -66,7 +66,7 @@ The Bootstrap Grid places related fields beside each other on wider screens. Bel
 
 ## Work Summary
 
-I made the basic contact form, added HTML validation, and then made the Bootstrap versions. I used Bootstrap classes for the layout and feedback. I checked empty fields, incorrect emails, short passwords, valid submissions, and the Reset button. I also checked the pages at mobile, tablet, and desktop widths.
+I made the basic contact form, added HTML validation, and then made the Bootstrap versions. I added a short script to Task 4 to compare passwords and show feedback after Submit. I checked empty fields, incorrect emails, short or different passwords, valid submissions, and the Reset button. I also checked the pages at mobile, tablet, and desktop widths.
 
 ## Resources
 
@@ -75,6 +75,8 @@ I made the basic contact form, added HTML validation, and then made the Bootstra
 [Bootstrap forms documentation](https://getbootstrap.com/docs/5.3/forms/overview/)
 
 [Bootstrap validation documentation](https://getbootstrap.com/docs/5.3/forms/validation/)
+
+[MDN form validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)
 
 Bootstrap version: 5.3.3.
 

@@ -18,7 +18,7 @@
     <main class="page" id="task4">
         <h1>Task 4: Registration Form</h1>
         <p>This is a practice form. Use sample details. No account is created.</p>
-        <form class="row g-3 was-validated" action="complete.html" method="get">
+        <form id="registration-form" class="row g-3" action="complete.html" method="get">
             <div class="col-12 col-md-6">
                 <label for="first-name" class="form-label">First Name</label>
                 <input id="first-name" name="firstName" type="text" class="form-control" maxlength="50" required aria-describedby="first-error first-good">
@@ -47,9 +47,9 @@
             <div class="col-12 col-md-6">
                 <label for="confirm-password" class="form-label">Confirm Password</label>
                 <input id="confirm-password" type="password" class="form-control" minlength="8" required aria-describedby="confirm-help confirm-error confirm-good">
-                <div id="confirm-help" class="form-text">Enter your password again. This form checks length only.</div>
-                <div id="confirm-error" class="invalid-feedback">Use at least 8 characters.</div>
-                <div id="confirm-good" class="valid-feedback">Length is valid.</div>
+                <div id="confirm-help" class="form-text">Enter the same password again.</div>
+                <div id="confirm-error" class="invalid-feedback">Use at least 8 characters and match your password.</div>
+                <div id="confirm-good" class="valid-feedback">Passwords match.</div>
             </div>
             <fieldset class="col-12 col-md-6">
                 <legend>Gender</legend>
@@ -98,9 +98,11 @@
             <div class="col-12">
                 <button type="submit" class="btn btn-outline-dark">Submit</button>
                 <button type="reset" class="btn btn-outline-dark">Reset</button>
+                <p id="form-result" class="mt-3" role="status"></p>
             </div>
         </form>
     </main>
     <footer>Yerkebulan Korganbek | IT-2501</footer>
+    <script src="registration.js"></script>
 </body>
 </html>
