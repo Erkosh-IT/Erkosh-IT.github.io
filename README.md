@@ -1,84 +1,82 @@
-# Assignment 4: Forms and Validation
+# Assignment 5: JavaScript Basics
 
 **Name:** Yerkebulan Korganbek
 
 **Group:** IT-2501
 
-## Project URL
+## Project URLs
 
-https://github.com/Erkosh-IT/Erkosh-IT.github.io
+GitHub repository: https://github.com/Erkosh-IT/Erkosh-IT.github.io
 
-Website: https://erkosh-it.github.io/assignment4/
+GitHub Pages: https://erkosh-it.github.io/assignment5/
 
 ## How to open the project
 
-Open assignment4/index.html, or use the website link above. The navigation links open the Bootstrap forms and registration page. Bootstrap is included in the project, so the pages also work offline.
+Open assignment5/index.html, or use the website link above. All five tasks are on one page. The project has an HTML file, a CSS file, and a JavaScript file. It also works offline.
 
-These are practice forms made with HTML, CSS, and Bootstrap CSS. Task 4 also uses a small JavaScript file for password matching and feedback after Submit. Use sample details when testing. Tasks 0 to 3 open a completion page using GET, so named fields appear in the URL. Task 4 stays on the registration page and does not send the entered details or create an account.
+The page starts with a sample profile. Changes are kept while the page is open and reset when it is reloaded.
 
-## Task 0: Simple Contact Form
+## Part 1: Profile Object, Data Types and Arithmetic
 
-The first form has a name field, an email field, a message box, and a Submit button. Each field has a label connected to it using matching for and id values.
+### Task 1: Personal Info Object
 
-![Simple contact form](assignment4/screenshots/task0-contact.png)
+I created a const object named userProfile. It stores a name as a string, a birth year as a number, isDeveloper as a boolean, and hobbies as an array. The starting profile uses Student, 2006, false, and two sample hobbies.
 
-## Task 1: HTML5 Validation
+The values are displayed on the page and the object is logged in the browser console.
 
-All three fields are required. The name has a maximum of 50 characters, and the message has a maximum of 500 characters. The email field uses type="email". The browser stops submission if a required field is empty or the email format is incorrect.
+![Sample profile](assignment5/screenshots/task1-profile.png)
 
-The screenshot shows an email without an @ symbol.
+### Task 2: Arithmetic Calculations
 
-![HTML5 email validation](assignment4/screenshots/task1-html-validation.png)
+The current year comes from new Date().getFullYear(). I subtract the birth year to calculate the age the person turns that year. Since the form only asks for a birth year, it does not check whether their birthday has passed.
 
-## Task 2: Bootstrap Form Styling
+The page also shows the total number of hobbies using the array's length. Both results are printed in the console and updated when the profile or hobby list changes.
 
-This is the contact form with Bootstrap styling. I used form-label for labels, form-control for inputs, and form-text for helper text. The fields also have placeholders.
+![Age and hobby count](assignment5/screenshots/task2-calculations.png)
 
-The form uses row and g-3 for the layout and spacing. Name and email use col-12 and col-md-6, so they sit next to each other from 768px and stack on smaller screens. The message takes the full row.
+## Part 2: Form Input and Event Responses
 
-![Bootstrap contact form](assignment4/screenshots/task2-bootstrap.png)
+### Task 3: HTML Form
 
-## Task 3: Bootstrap Validation Styles
+The form has a Username input, a Birth Year input, and a Create / Update Profile button. Both fields are required. Birth year accepts whole numbers from 1900 to the current year.
 
-The two fixed examples show is-valid and is-invalid with messages below them. These classes are written directly in the HTML.
+![Profile form](assignment5/screenshots/task3-form.png)
 
-The email form below them uses Bootstrap's was-validated class. This lets Bootstrap CSS show feedback based on HTML5 validation. Feedback is visible from the start. An empty or incorrect email shows an error, and a correctly formatted email shows success. The browser also checks the form when Submit is pressed.
+### Task 4: Event Listener
 
-![Valid and invalid Bootstrap fields](assignment4/screenshots/task3-feedback.png)
+The submit listener reads the form values and updates userProfile. Number() converts the birth year input into a number. The page then shows the updated profile and recalculates the age without reloading.
 
-## Task 4: Registration Form
+The message becomes green after an update. A username containing only spaces produces a red message. In the screenshot, I changed the sample profile to Alex, born in 2005.
 
-The registration form includes first and last name, email, password, password confirmation, gender, hobbies, and country. Gender uses radio buttons, so only one option can be selected. Hobbies use checkboxes and are optional, so several can be selected. Country uses a dropdown.
+![Updated profile after submitting the form](assignment5/screenshots/task4-updated.png)
 
-Both password fields need at least 8 characters. The registration.js file compares the passwords when Submit is pressed. It then adds was-validated to show Bootstrap error or success feedback. A message below the buttons says whether the form is correct. Editing a field hides the old feedback until Submit is pressed again. Reset clears the fields and feedback.
+## Part 3: DOM List Manipulation
 
-Feedback after submitting empty fields:
+### Task 5: Creating and Removing Elements
 
-![Registration form errors](assignment4/screenshots/task4-errors.png)
+The hobby list starts with Reading and Music. Add Item creates a new li element with createElement and adds it with appendChild. It also adds the hobby to the array. Empty or space-only entries are not added.
 
-Correctly completed form with sample details:
+After adding Sports:
 
-![Valid registration form](assignment4/screenshots/task4-valid.png)
+![Hobby added to the list](assignment5/screenshots/task5-added.png)
 
-The Bootstrap Grid places related fields beside each other on wider screens. Below 768px, the fields stack in one column.
+Remove Item removes the last li with removeChild and removes the last hobby from the array. The profile's hobby names and total stay in sync with the list. If the list is empty, a message says there is nothing to remove.
 
-![Registration form on mobile](assignment4/screenshots/task4-mobile.png)
+After removing Sports:
+
+![Last hobby removed](assignment5/screenshots/task5-removed.png)
 
 ## Work Summary
 
-I made the basic contact form, added HTML validation, and then made the Bootstrap versions. I added a short script to Task 4 to compare passwords and show feedback after Submit. I checked empty fields, incorrect emails, short or different passwords, valid submissions, and the Reset button. I also checked the pages at mobile, tablet, and desktop widths.
+I started with the profile object and calculations, then added the form and its submit listener. After that, I added the hobby list buttons. I tested profile updates, invalid birth years, adding hobbies, and removing every item from the list. I also checked the page at different screen widths.
 
 ## Resources
 
-[Lecture playlist: Bootstrap basics](https://www.youtube.com/playlist?list=PLPT6CF0r4E3rkvy1rLUKdDHf_HmWZeURW)
+Week7_frontend_new.pdf: variables, data types, operators, type conversion, functions, and console output.
 
-[Bootstrap forms documentation](https://getbootstrap.com/docs/5.3/forms/overview/)
+Javascript_DOM.pdf: selecting elements, changing text and styles, objects, and event listeners.
 
-[Bootstrap validation documentation](https://getbootstrap.com/docs/5.3/forms/validation/)
-
-[MDN form validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)
-
-Bootstrap version: 5.3.3.
+Assignment 5 requirements: creating and removing list elements and calculating age dynamically.
 
 ## Previous Assignments
 
@@ -87,3 +85,5 @@ Bootstrap version: 5.3.3.
 [Assignment 2 report](assignment2/README.md)
 
 [Assignment 3 report](assignment3/README.md)
+
+[Assignment 4 report](assignment4/README.md)

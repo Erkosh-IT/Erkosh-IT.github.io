@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 5 - JavaScript Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Assignment 5: JavaScript Basics</h1>
+        <p>Yerkebulan Korganbek | IT-2501</p>
+    </header>
+    <main>
+        <section id="task1">
+            <h2>Task 1: Personal Info Object</h2>
+            <p>This is a sample profile. You can change the name, birth year, and hobbies below.</p>
+            <p>Name: <span id="profile-name"></span></p>
+            <p>Birth year: <span id="profile-year"></span></p>
+            <p>Developer: <span id="profile-developer"></span></p>
+            <p>Hobbies: <span id="profile-hobbies"></span></p>
+        </section>
+
+        <section id="task2">
+            <h2>Task 2: Arithmetic Calculations</h2>
+            <p>Current year: <span id="current-year"></span></p>
+            <p>Age this year: <span id="profile-age"></span></p>
+            <p>Total hobbies: <span id="hobby-count"></span></p>
+            <p>Age is calculated as the current year minus the birth year.</p>
+        </section>
+
+        <section id="task3">
+            <h2>Task 3: Profile Form</h2>
+            <form id="profile-form">
+                <label for="username">Username</label>
+                <input id="username" type="text" maxlength="50" required>
+
+                <label for="birth-year">Birth Year</label>
+                <input id="birth-year" type="number" min="1900" step="1" required>
+
+                <button type="submit">Create / Update Profile</button>
+            </form>
+        </section>
+
+        <section id="task4">
+            <h2>Task 4: Event Listener</h2>
+            <p>Submit the form above to update the profile and age.</p>
+            <p id="profile-message" role="status">The profile has not been updated yet.</p>
+        </section>
+
+        <section id="task5">
+            <h2>Task 5: Add and Remove Hobbies</h2>
+            <label for="new-hobby">New hobby</label>
+            <input id="new-hobby" type="text" maxlength="50" placeholder="For example, Sports">
+            <button id="add-item" type="button">Add Item</button>
+            <button id="remove-item" type="button">Remove Item</button>
+            <ul id="hobby-list"></ul>
+            <p id="list-message" role="status">Remove Item deletes the last hobby.</p>
+        </section>
+    </main>
+    <footer>Changes last until you reload the page.</footer>
+    <script src="script.js"></script>
+</body>
+</html>
