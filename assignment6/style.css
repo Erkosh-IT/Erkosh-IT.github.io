@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+header, footer {
+    padding: 15px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid gray;
+    overflow-wrap: anywhere;
+}
+
+button, input {
+    padding: 8px;
+    margin-bottom: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid gray;
+}
+
+button {
+    color: black;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+label, input {
+    display: block;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 350px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+figure {
+    width: 300px;
+    max-width: 100%;
+    margin: 0;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+}
+
+figcaption {
+    margin-top: 8px;
+}
+
+.panel {
+    display: none;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.bar-track {
+    height: 25px;
+    margin-bottom: 15px;
+    background-color: lightgray;
+}
+
+.skill-bar {
+    width: 0;
+    height: 25px;
+    background-color: gray;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 6 - jQuery Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My jQuery Portfolio</h1>
+        <p>Yerkebulan Korganbek | IT-2501</p>
+    </header>
+    <main>
+        <section id="task0">
+            <h2>Task 0: Setup</h2>
+            <p id="ready-message">Loading jQuery...</p>
+        </section>
+
+        <section id="task1">
+            <h2>Task 1: Selectors and CSS</h2>
+            <h3>Welcome to My Portfolio</h3>
+            <p>My name is Yerkebulan Korganbek.</p>
+            <p id="headline">Frontend student</p>
+            <p class="intro">I am learning HTML, CSS, JavaScript, and jQuery through my frontend assignments.</p>
+            <button id="light-theme" type="button">Light Theme</button>
+            <button id="dark-theme" type="button">Dark Theme</button>
+        </section>
+
+        <section id="task2">
+            <h2>Task 2: About Me</h2>
+            <p>I study in group IT-2501. This portfolio brings together the web development skills I am practicing.</p>
+            <button id="hide-about" type="button">Hide</button>
+            <button id="show-about" type="button">Show</button>
+            <button id="toggle-about" type="button">Toggle</button>
+            <div id="about-details">
+                <p>Currently learning jQuery!</p>
+                <ul>
+                    <li>I have built a registration form.</li>
+                    <li>I have made an editable hobby list.</li>
+                    <li>My goal is to make interactive web pages.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="task3">
+            <h2>Task 3: Project Gallery</h2>
+            <button id="fade-in" type="button">Fade In</button>
+            <button id="fade-out" type="button">Fade Out</button>
+            <button id="fade-toggle" type="button">Fade Toggle</button>
+            <div class="gallery">
+                <figure>
+                    <img class="gallery-image" src="images/forms.png" alt="My Bootstrap form with validation feedback">
+                    <figcaption>Assignment 4: Forms</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" src="images/profile.png" alt="My JavaScript profile and sample data">
+                    <figcaption>Assignment 5: Profile</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="task4">
+            <h2>Task 4: My Practice Topics</h2>
+            <p>Click a heading to open or close its panel.</p>
+            <button id="open-panels" type="button">Open All</button>
+            <button id="close-panels" type="button">Close All</button>
+
+            <h3><button class="panel-button" type="button">My HTML Practice</button></h3>
+            <div class="panel">
+                <p>I use HTML to add headings, forms, lists, and links.</p>
+            </div>
+            <h3><button class="panel-button" type="button">My CSS Practice</button></h3>
+            <div class="panel">
+                <p>I use CSS to change fonts, colors, spacing, and layout.</p>
+            </div>
+            <h3><button class="panel-button" type="button">My JavaScript Practice</button></h3>
+            <div class="panel">
+                <p>I use JavaScript to respond to clicks and update page content.</p>
+            </div>
+        </section>
+
+        <section id="task5">
+            <h2>Task 5: Technical Skills</h2>
+            <label for="new-skill">New skill</label>
+            <input id="new-skill" type="text" maxlength="50" placeholder="For example, Git">
+            <button id="add-skill" type="button">Add Skill</button>
+            <button id="prepend-skill" type="button">Prepend Skill</button>
+            <button id="remove-skill" type="button">Remove Skill</button>
+            <ul id="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+            </ul>
+            <p id="skill-message" role="status">Remove Skill deletes the last skill.</p>
+        </section>
+
+        <section id="task6">
+            <h2>Task 6: Change a Link</h2>
+            <p><a id="social-link" href="https://github.com/Erkosh-IT">My GitHub profile</a></p>
+            <button id="change-link" type="button">Link to My Repository</button>
+        </section>
+
+        <section id="task7">
+            <h2>Task 7: Live Form Input</h2>
+            <p>Type below to see a live preview. No details are sent.</p>
+            <form id="preview-form">
+                <label for="visitor-name">Name</label>
+                <input id="visitor-name" type="text" maxlength="50">
+                <label for="visitor-email">Email</label>
+                <input id="visitor-email" type="email" maxlength="100">
+            </form>
+            <p>Name: <span id="name-preview"></span></p>
+            <p>Email: <span id="email-preview"></span></p>
+        </section>
+
+        <section id="task8">
+            <h2>Task 8: Animated Skill Bars</h2>
+            <p>Three skills from my list, using example levels for this animation.</p>
+            <p>HTML: 80%</p>
+            <div class="bar-track"><div id="html-bar" class="skill-bar"></div></div>
+            <p>CSS: 60%</p>
+            <div class="bar-track"><div id="css-bar" class="skill-bar"></div></div>
+            <p>JavaScript: 40%</p>
+            <div class="bar-track"><div id="js-bar" class="skill-bar"></div></div>
+            <button id="animate-skills" type="button">Animate My Skills</button>
+            <p>Click again to return the bars to zero.</p>
+        </section>
+    </main>
+    <footer>Assignment 6 | jQuery selectors, effects, and animations</footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

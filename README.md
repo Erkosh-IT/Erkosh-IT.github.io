@@ -1,4 +1,4 @@
-# Assignment 5: JavaScript Basics
+# Assignment 6: jQuery Portfolio
 
 **Name:** Yerkebulan Korganbek
 
@@ -8,75 +8,105 @@
 
 GitHub repository: https://github.com/Erkosh-IT/Erkosh-IT.github.io
 
-GitHub Pages: https://erkosh-it.github.io/assignment5/
+GitHub Pages: https://erkosh-it.github.io/assignment6/
 
 ## How to open the project
 
-Open assignment5/index.html, or use the website link above. All five tasks are on one page. The project has an HTML file, a CSS file, and a JavaScript file. It also works offline.
+Open assignment6/index.html, or use the website link above. All tasks are on one page. An internet connection is needed because jQuery 3.7.1 loads from the CDN shown in the lecture.
 
-The page starts with a sample profile. Changes are kept while the page is open and reset when it is reloaded.
+## Part 1: Getting Started with jQuery
 
-## Part 1: Profile Object, Data Types and Arithmetic
+### Task 0: Setup
 
-### Task 1: Personal Info Object
+I included jQuery before script.js. The code runs inside $(document).ready(function () { ... }). It prints "jQuery is ready!" in the browser console and shows the same message on the page.
 
-I created a const object named userProfile. It stores a name as a string, a birth year as a number, isDeveloper as a boolean, and hobbies as an array. The starting profile uses Student, 2006, false, and two sample hobbies.
+![jQuery ready message](assignment6/screenshots/task0-setup.png)
 
-The values are displayed on the page and the object is logged in the browser console.
+### Task 1: Selectors and CSS
 
-![Sample profile](assignment5/screenshots/task1-profile.png)
+The profile section contains my name, a headline, and a short introduction. A tag selector changes the h2 font size, an ID selector updates the headline with .text(), and a class selector makes the introduction italic with .css().
 
-### Task 2: Arithmetic Calculations
+The Light Theme and Dark Theme buttons change the page colors with .css().
 
-The current year comes from new Date().getFullYear(). I subtract the birth year to calculate the age the person turns that year. Since the form only asks for a birth year, it does not check whether their birthday has passed.
+Light theme:
 
-The page also shows the total number of hobbies using the array's length. Both results are printed in the console and updated when the profile or hobby list changes.
+![Light theme](assignment6/screenshots/task1-light.png)
 
-![Age and hobby count](assignment5/screenshots/task2-calculations.png)
+Dark theme:
 
-## Part 2: Form Input and Event Responses
+![Dark theme](assignment6/screenshots/task1-dark.png)
 
-### Task 3: HTML Form
+## Part 2: jQuery Effects
 
-The form has a Username input, a Birth Year input, and a Create / Update Profile button. Both fields are required. Birth year accepts whole numbers from 1900 to the current year.
+### Task 2: Visibility Methods
 
-![Profile form](assignment5/screenshots/task3-form.png)
+The About Me section includes a short biography, my current learning status, and a few facts about my coursework. Hide, Show, and Toggle control the status and facts using .hide(), .show(), and .toggle().
 
-### Task 4: Event Listener
+![About Me section](assignment6/screenshots/task2-about.png)
 
-The submit listener reads the form values and updates userProfile. Number() converts the birth year input into a number. The page then shows the updated profile and recalculates the age without reloading.
+### Task 3: Fade Methods
 
-The message becomes green after an update. A username containing only spaces produces a red message. In the screenshot, I changed the sample profile to Alex, born in 2005.
+The gallery contains screenshots from my previous forms and JavaScript assignments. The three buttons use .fadeIn(), .fadeOut(), and .fadeToggle() on both images. Each fade takes 400 milliseconds.
 
-![Updated profile after submitting the form](assignment5/screenshots/task4-updated.png)
+![Project gallery](assignment6/screenshots/task3-gallery.png)
 
-## Part 3: DOM List Manipulation
+### Task 4: Slide Methods
 
-### Task 5: Creating and Removing Elements
+There are three clickable headings about my HTML, CSS, and JavaScript practice. Clicking a heading uses .slideToggle() on its panel. Open All uses .slideDown(), and Close All uses .slideUp().
 
-The hobby list starts with Reading and Music. Add Item creates a new li element with createElement and adds it with appendChild. It also adds the hobby to the array. Empty or space-only entries are not added.
+The screenshot shows all three panels open.
 
-After adding Sports:
+![Expanded topic panels](assignment6/screenshots/task4-panels.png)
 
-![Hobby added to the list](assignment5/screenshots/task5-added.png)
+## Part 3: DOM Manipulation with jQuery
 
-Remove Item removes the last li with removeChild and removes the last hobby from the array. The profile's hobby names and total stay in sync with the list. If the list is empty, a message says there is nothing to remove.
+### Task 5: Add and Remove Elements
 
-After removing Sports:
+The skills list starts with HTML, CSS, JavaScript, and jQuery. Add Skill uses .append() to add a skill at the end. Prepend Skill uses .prepend() to add it at the beginning. Empty or space-only input is rejected.
 
-![Last hobby removed](assignment5/screenshots/task5-removed.png)
+Here I added Git at the end and Python at the beginning:
+
+![Skills added at both ends](assignment6/screenshots/task5-added.png)
+
+Remove Skill uses .remove() on the last list item. If the list is empty, it shows a message instead. In this screenshot, Git has been removed.
+
+![Last skill removed](assignment6/screenshots/task5-removed.png)
+
+### Task 6: Modifying Attributes
+
+The link initially opens my GitHub profile. Pressing Link to My Repository changes its href with .attr() and updates its text.
+
+![Updated repository link](assignment6/screenshots/task6-link.png)
+
+### Task 7: Form Interaction
+
+The form has Name and Email inputs. As I type, .val() reads each value and .text() displays it below the form. This is a live preview; the form does not send the details anywhere.
+
+![Live input preview](assignment6/screenshots/task7-preview.png)
+
+## Part 4: Animations
+
+### Task 8: Animated Skill Bars
+
+Three bars represent HTML, CSS, and JavaScript from the skills list. They start at zero width.
+
+![Skill bars before animation](assignment6/screenshots/task8-zero.png)
+
+Animate My Skills uses .animate() to grow the bars to 80%, 60%, and 40%. These are example levels for the exercise. Clicking again animates all bars back to zero. A boolean variable keeps track of which action comes next.
+
+![Skill bars after animation](assignment6/screenshots/task8-animated.png)
 
 ## Work Summary
 
-I started with the profile object and calculations, then added the form and its submit listener. After that, I added the hobby list buttons. I tested profile updates, invalid birth years, adding hobbies, and removing every item from the list. I also checked the page at different screen widths.
+I made the portfolio sections first, then added the jQuery handlers for each task. I tested both themes, all visibility effects, adding and removing skills, changing the link, and typing into the form. I also checked that the skill bars return to zero on the next click and that the page fits smaller screens.
 
 ## Resources
 
-Week7_frontend_new.pdf: variables, data types, operators, type conversion, functions, and console output.
+Week8_frontend.pdf and the Assignment 6 requirements.
 
-Javascript_DOM.pdf: selecting elements, changing text and styles, objects, and event listeners.
+[Provided jQuery lecture playlist](https://www.youtube.com/playlist?list=PLPT6CF0r4E3oCA-JwzCc9fgWz6-6mVp-4)
 
-Assignment 5 requirements: creating and removing list elements and calculating age dynamically.
+Gallery images: screenshots from my Assignments 4 and 5.
 
 ## Previous Assignments
 
@@ -87,3 +117,5 @@ Assignment 5 requirements: creating and removing list elements and calculating a
 [Assignment 3 report](assignment3/README.md)
 
 [Assignment 4 report](assignment4/README.md)
+
+[Assignment 5 report](assignment5/README.md)
