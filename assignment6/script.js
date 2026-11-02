@@ -44,8 +44,16 @@ $(document).ready(function () {
         $('.gallery-image').fadeToggle(400);
     });
 
-    $('.panel-button').click(function () {
-        $(this).parent().next().slideToggle(400);
+    $('#html-topic').click(function () {
+        $('#html-panel').slideToggle(400);
+    });
+
+    $('#css-topic').click(function () {
+        $('#css-panel').slideToggle(400);
+    });
+
+    $('#js-topic').click(function () {
+        $('#js-panel').slideToggle(400);
     });
 
     $('#open-panels').click(function () {
@@ -58,33 +66,22 @@ $(document).ready(function () {
 
     $('#add-skill').click(function () {
         const skill = $('#new-skill').val().trim();
-        if (skill === '') {
-            $('#skill-message').text('Please enter a skill.');
-            return;
+        if (skill !== '') {
+            $('#skill-list').append($('<li>').text(skill));
+            $('#new-skill').val('');
         }
-        $('#skill-list').append($('<li>').text(skill));
-        $('#new-skill').val('');
-        $('#skill-message').text('Added at the end: ' + skill);
     });
 
     $('#prepend-skill').click(function () {
         const skill = $('#new-skill').val().trim();
-        if (skill === '') {
-            $('#skill-message').text('Please enter a skill.');
-            return;
+        if (skill !== '') {
+            $('#skill-list').prepend($('<li>').text(skill));
+            $('#new-skill').val('');
         }
-        $('#skill-list').prepend($('<li>').text(skill));
-        $('#new-skill').val('');
-        $('#skill-message').text('Added at the start: ' + skill);
     });
 
     $('#remove-skill').click(function () {
-        if ($('#skill-list li').length === 0) {
-            $('#skill-message').text('There are no skills to remove.');
-            return;
-        }
         $('#skill-list li:last').remove();
-        $('#skill-message').text('Removed the last skill.');
     });
 
     $('#change-link').click(function () {
@@ -96,12 +93,9 @@ $(document).ready(function () {
         event.preventDefault();
     });
 
-    $('#visitor-name').on('input', function () {
-        $('#name-preview').text($(this).val());
-    });
-
-    $('#visitor-email').on('input', function () {
-        $('#email-preview').text($(this).val());
+    $('#visitor-name, #visitor-email').on('input', function () {
+        $('#name-preview').text($('#visitor-name').val());
+        $('#email-preview').text($('#visitor-email').val());
     });
 
     let skillsVisible = false;

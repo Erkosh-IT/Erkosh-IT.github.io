@@ -68,7 +68,7 @@ Here I added Git at the end and Python at the beginning:
 
 ![Skills added at both ends](assignment6/screenshots/task5-added.png)
 
-Remove Skill uses .remove() on the last list item. If the list is empty, it shows a message instead. In this screenshot, Git has been removed.
+Remove Skill uses .remove() on the last list item. If the list is empty, nothing happens. In this screenshot, Git has been removed.
 
 ![Last skill removed](assignment6/screenshots/task5-removed.png)
 
